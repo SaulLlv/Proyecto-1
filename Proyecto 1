@@ -1,0 +1,43 @@
+//Compra de Zapatos en Linea//
+
+//Definir precio Original del Producto
+precio_Original = "$100"
+// Definir Descuentos por Cupon
+precio_descuento_Cupon = "10%"
+//Definir iva
+precio_iva = "12%"
+//Definir Descuento por cada 2 pares de zapatos
+precio_descuento_2_Zapatos = "5%"
+//Definir costo del envio 
+precio_costo_Envio = "$16"
+
+//paso 1 Leer precio original del producto
+precio_Original = 100
+
+//Aplicar descuento del Cupon
+precio_descuento_Cupon = precio_Original * (1 - .10) 
+// "$90"
+
+//Aplicar Iva al precio con descuento
+precio_iva = precio_descuento_Cupon * 1.12 
+// "$100.80"
+
+//Aplicar descuento por cada dos pares
+if cantidad_de_pares >= 2: 
+       precio_descuento_2_Zapatos = precio_iva * 0.95 
+else  
+    precio_con_descuento_cantidad = precio_con_iva
+
+// "$95.76"
+
+//Calcular precio de envio
+precio_costo_Envio = 10 + (2 * 3) 
+// "$16"
+
+//Calcular costo final del Producto
+costo_Final = (precio_descuento_2_Zapatos * 2) + precio_costo_Envio 
+
+costo_Final = "$207.52"
+
+
+
